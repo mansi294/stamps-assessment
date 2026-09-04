@@ -1,0 +1,16 @@
+# .NET
+server/**/bin/
+server/**/obj/
+*.user
+
+# Node (client has its own .gitignore too, this covers root-level runs)
+client/node_modules/
+client/dist/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Claude Code local settings
+.claude/settings.local.json

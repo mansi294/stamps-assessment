@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="TakeHome.Api.Tests/TakeHome.Api.Tests.csproj" />
+  <Project Path="TakeHome.Api/TakeHome.Api.csproj" />
+</Solution>
