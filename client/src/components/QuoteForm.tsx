@@ -83,8 +83,8 @@ export function QuoteForm({ onShipmentCreated }: QuoteFormProps) {
           Weight (lbs)
           <input
             type="number"
-            min="0"
-            step="0.01"
+            min="0.001"
+            step="any"
             required
             value={form.weightLbs}
             onChange={updateField('weightLbs')}
@@ -94,8 +94,8 @@ export function QuoteForm({ onShipmentCreated }: QuoteFormProps) {
           Length (in)
           <input
             type="number"
-            min="0"
-            step="0.01"
+            min="0.001"
+            step="any"
             required
             value={form.lengthIn}
             onChange={updateField('lengthIn')}
@@ -105,8 +105,8 @@ export function QuoteForm({ onShipmentCreated }: QuoteFormProps) {
           Width (in)
           <input
             type="number"
-            min="0"
-            step="0.01"
+            min="0.001"
+            step="any"
             required
             value={form.widthIn}
             onChange={updateField('widthIn')}
@@ -116,8 +116,8 @@ export function QuoteForm({ onShipmentCreated }: QuoteFormProps) {
           Height (in)
           <input
             type="number"
-            min="0"
-            step="0.01"
+            min="0.001"
+            step="any"
             required
             value={form.heightIn}
             onChange={updateField('heightIn')}

@@ -1,12 +1,13 @@
 using System.ComponentModel.DataAnnotations;
+using TakeHome.Api.Validation;
 
 namespace TakeHome.Api.Models;
 
 public record RateQuoteRequest(
-	[Range(0.001, double.MaxValue)] double WeightLbs,
-	[Range(0.001, double.MaxValue)] double LengthIn,
-	[Range(0.001, double.MaxValue)] double WidthIn,
-	[Range(0.001, double.MaxValue)] double HeightIn,
+	[GreaterThanZero] double WeightLbs,
+	[GreaterThanZero] double LengthIn,
+	[GreaterThanZero] double WidthIn,
+	[GreaterThanZero] double HeightIn,
 	[Range(1, 8)] int Zone
 );
 
